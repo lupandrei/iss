@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminRentalController">
+   <children>
+      <TableView fx:id="tableView" layoutX="26.0" layoutY="33.0" prefHeight="262.0" prefWidth="510.0">
+        <columns>
+          <TableColumn fx:id="tableColumnIdClient" prefWidth="75.0" text="ID Client" />
+            <TableColumn fx:id="tableColumnIdBook" prefWidth="100.7999267578125" text="id book" />
+            <TableColumn fx:id="tableColumnReturned" prefWidth="109.60003662109375" text="Returned" />
+            <TableColumn fx:id="tableColumnStatus" prefWidth="68.00006103515625" text="status" />
+            <TableColumn fx:id="tableColumnCopies" prefWidth="75.0" text="copies" />
+            <TableColumn fx:id="tableColumnIdRent" prefWidth="75.0" text="id rent" />
+        </columns>
+      </TableView>
+      <TextField fx:id="textFieldPenalty" layoutX="26.0" layoutY="331.0" promptText="penalty" />
+      <Button fx:id="buttonConfirmReturn" layoutX="210.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleButtonConfirmReturn" prefHeight="26.0" prefWidth="150.0" text="Confirm return" />
+      <ComboBox fx:id="combobox" layoutX="405.0" layoutY="332.0" onAction="#handleCombobox" prefWidth="150.0" promptText="status" />
+   </children>
+</AnchorPane>
